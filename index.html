@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Detector</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/ua-parser-js@1.0.35/dist/ua-parser.min.js"></script>
+</head>
+<body class="bg-gray-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8">
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-lg p-6">
+            <h1 class="text-2xl font-bold text-center mb-6">📱 Phone Detector</h1>
+            
+            <div class="space-y-4">
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h2 class="font-semibold text-gray-700 mb-2">Your Device Information:</h2>
+                    <div id="deviceInfo" class="space-y-2">
+                        <p class="text-gray-600">Loading...</p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h2 class="font-semibold text-blue-700 mb-2">Browser Information:</h2>
+                    <div id="browserInfo" class="space-y-2">
+                        <p class="text-blue-600">Loading...</p>
+                    </div>
+                </div>
+
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h2 class="font-semibold text-green-700 mb-2">Operating System:</h2>
+                    <div id="osInfo" class="space-y-2">
+                        <p class="text-green-600">Loading...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
